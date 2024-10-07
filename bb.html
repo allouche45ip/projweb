@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>les clients</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    
+   
+
+    <section class="contact" id="reserve">
+        <div class="heading">
+            <h2>RESERVER</h2>
+        </div>
+      
+        <div class="container">
+            <div class="image">
+                <img src="myimage/About.jpg" alt="">
+            </div>
+               <div class="moh">
+    
+                <h1></h1>
+                <input type="text" placeholder="nom" required id="nom">
+                <input type="text" placeholder="prenom" required id="prenom">
+                <input type="email" placeholder=" Email" required id="Email">
+                <input type="number" placeholder="Age" required id="age">
+                <input type="number" placeholder= "telephone" required  id="numerote">
+                <textarea name="" placeholder="Message" id="message" cols="30" rows="10" ></textarea>
+               
+                 <input type="submit" class="submit" value="RESRVIE" id="create" href="bb.html"> 
+              <!-- <button>
+                <a href="" id="create">
+                  RESRVIE
+                </a>
+                </button> 
+                </div>
+  -->
+        </div>
+      </section>
+
+    
+ 
+    <div class="resul">
+    
+        <div class="resulta">
+         <!--si on ecrirer dans butom -->
+                
+        <input  onkeyup="rechercheclient(this.value)"  type="text" placeholder="serche" id="gg"> <br><br>
+           <div class="you">
+           <button onclick="smod(this.id)" id="search" > Serche by nom</button>
+           <button  onclick="smod(this.id)" id="telephone" >  Serche by telephone</button>
+                       <!---- pour récupérer  id  pour utilise dans function-->
+          </div> <br>
+            <div id="deleteAll">    <!-- onclick="deletAllb()" -->
+      
+             </div>
+             
+             <table>
+                
+                 <tr>
+                 <th> Id </th>
+                 <th> Nom </th>
+                 <th> Prenom </th>
+                 <th> Age </th>
+                 <th>Emaile </th>
+                 <th> telephone </th>
+                 <th>Message </th>
+                 <th>   update </th>
+                 <th>   delete </th>
+                 </tr>
+                
+                 <tbody id="tbod">  
+                    
+                    </tbody>
+             </table>
+      </div>
+      </div>
+
+      
+  
+  <script src="nb.js"></script>
+</body>
+</html>
